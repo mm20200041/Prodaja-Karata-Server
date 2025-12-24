@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/sektori/UcitajSektoreOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/util/PdfGenerator.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/repository/db/impl/DbRepositoryGeneric.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/sektori/UcitajSektorOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/util/QrGenerator.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/kupci/PretraziKupceOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/kupci/ObrisiKupcaOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/repository/db/DbRepository.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/main/Main.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/forme/KonfiguracijaPortaForma.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/utakmice/ObrisiUtakmicuOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/karte/UcitajKartuOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/utakmice/PretraziUtakmiceOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/karte/UcitajKarteOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/hale/UcitajHaleOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/redovi/UcitajRedoveOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/server/Server.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/konfiguracija/Konfiguracija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/racuni/PretraziRacuneOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/util/EmailSender.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/racuni/DodajRacunOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/utakmice/UcitajUtakmiceOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/login/LoginOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/kupci/DodajKupcaOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/racuni/UcitajRacuneOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/ApstraktnaGenerickaOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/repository/db/DbConnectionFactory.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/server/QRHttpServer.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/karte/UcitajNeprodateKarteOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/niti/ObradaKlijentskihZahteva.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/repository/Repository.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/karte/ProveriKartuOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/kupci/UcitajKupceOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/sektori/UcitajBrojeveSektoraOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/controller/Controller.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/utakmice/DodajUtakmiceOperacija.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/util/HtmlTemplate.java</file>
+            <file>file:/C:/Users/marko/Documents/NetBeansProjects/Projekat-Server/src/operacija/racuni/IzmeniRacunOperacija.java</file>
+        </group>
+    </open-files>
+</project-private>
