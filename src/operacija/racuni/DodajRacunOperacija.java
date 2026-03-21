@@ -22,7 +22,7 @@ import util.PdfGenerator;
  *
  * @author marko
  */
-public class DodajRacunOperacija extends ApstraktnaGenerickaOperacija{
+ public class DodajRacunOperacija extends ApstraktnaGenerickaOperacija{
     @Override
     protected void preduslovi(Object objekat) throws Exception {
         if(objekat==null || !(objekat instanceof Racun)){
@@ -51,7 +51,7 @@ public class DodajRacunOperacija extends ApstraktnaGenerickaOperacija{
     protected void izvrsiOperaciju(Object objekat) throws Exception {
         Racun r = (Racun) objekat;
 
-        int idRacuna = broker.addReturnKey(r);
+        int idRacuna = broker.addReturnKey(r);        
         r.setRacunID(idRacuna);
 
         List<StavkaRacuna> stavke = r.getStavke();
@@ -60,20 +60,19 @@ public class DodajRacunOperacija extends ApstraktnaGenerickaOperacija{
         
         for (StavkaRacuna sr : stavke) {
             String kod = UUID.randomUUID().toString();
+            
+
+            int rows = broker.prodajKartu(sr.getKarta().getKartaID(), kod);
+            
+            if(rows == 0){
+                throw new Exception("Karta je već prodata.");
+            }
+            
             sr.getKarta().setKod(kod);
             sr.getKarta().setProdato(true);
             sr.setRacun(r);
             broker.add(sr);
-            //broker.edit(sr.getKarta());
-            
-            
-            try {
-                broker.edit(sr.getKarta());
-            } catch (Exception ex) {
-                ex.printStackTrace();
-                throw ex;
-            }
-            
+
             
             File pdf = PdfGenerator.generisiUlaznicu(sr);
             pdfovi.add(pdf);

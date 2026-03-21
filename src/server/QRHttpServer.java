@@ -41,17 +41,17 @@ public class QRHttpServer {
                 
                 String html;
                 if(k == null){
-                    html = HtmlTemplate.crveni("Kod ne postoji");
+                    html = HtmlTemplate.crveni("Код не постоји");
                 } else if(!k.isProdato()){
-                    html = HtmlTemplate.crveni("Karta nije kupljena");
+                    html = HtmlTemplate.crveni("Карта није купљена");
                 } else if(k.isIskorisceno()){
-                    html = HtmlTemplate.crveni("Ulaznica je već iskorišćena");
+                    html = HtmlTemplate.crveni("Улазница је већ искоришћена");
                 } else {
                     html = HtmlTemplate.zeleni(
-                    "Ulaz dozvoljen",
-                    "Sektor " + k.getSektor().getBroj() +
-                    " · Red " + k.getRed() +
-                    " · Sedište " + k.getBrojSedista());
+                    "Улаз дозвољен",
+                    "Сектор " + k.getSektor().getBroj() +
+                    " · Ред " + k.getRed() +
+                    " · Седиште " + k.getBrojSedista());
                 }
 
                 byte[] responseBytes = html.getBytes(StandardCharsets.UTF_8); 

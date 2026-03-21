@@ -17,4 +17,5 @@ public interface Repository<T> {
     void edit(T param) throws Exception;
     void delete(T param) throws Exception;
     int addReturnKey(T param) throws Exception;
+    int prodajKartu(long kartaID, String kod) throws Exception;
 }

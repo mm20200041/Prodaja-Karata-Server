@@ -5,7 +5,9 @@
 package operacija.utakmice;
 
 
+import domen.Karta;
 import domen.Utakmica;
+import java.util.List;
 import operacija.ApstraktnaGenerickaOperacija;
 
 /**
@@ -22,6 +24,16 @@ public class ObrisiUtakmicuOperacija extends ApstraktnaGenerickaOperacija{
 
     @Override
     protected void izvrsiOperaciju(Object objekat) throws Exception {
+        Utakmica u = (Utakmica) objekat;
+        
+        List<Karta> sveKarte = broker.getAll(new Karta(), " JOIN sektor ON karta.sektorID=sektor.sektorID" + 
+                                                          " JOIN utakmica ON karta.utakmicaID=utakmica.utakmicaID" + 
+                                                          " JOIN hala ON hala.halaID=utakmica.halaID" + 
+                                                          " WHERE karta.utakmicaID="+u.getUtakmicaID());
+        for (Karta karta : sveKarte) {
+            broker.delete(karta);
+        }
+        
         broker.delete((Utakmica) objekat);
     }
 }

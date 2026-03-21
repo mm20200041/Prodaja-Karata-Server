@@ -5,6 +5,7 @@
 package repository.db.impl;
 
 import domen.ApstraktniDomenskiObjekat;
+import domen.Karta;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
@@ -45,9 +46,10 @@ public class DbRepositoryGeneric implements DbRepository<ApstraktniDomenskiObjek
         st.close();
         
        }catch (java.sql.DataTruncation e) {
-    System.out.println("Data truncation greška: " + e.getMessage());
-    e.printStackTrace();
-    }}
+            System.out.println("Data truncation greška: " + e.getMessage());
+            e.printStackTrace();
+       }
+    }
 
     @Override
     public void edit(ApstraktniDomenskiObjekat param) throws Exception {
@@ -86,5 +88,23 @@ public class DbRepositoryGeneric implements DbRepository<ApstraktniDomenskiObjek
         ps.close();
         return generatedId;
     }
+    
+    @Override
+    public int prodajKartu(long kartaID, String kod) throws Exception {
+        String upit = "UPDATE karta SET prodato = 1, kod = ? WHERE kartaID = ? AND prodato = 0";
+
+        PreparedStatement ps = DbConnectionFactory.getInstance()
+                .getConnection()
+                .prepareStatement(upit);
+
+        ps.setString(1, kod);
+        ps.setLong(2, kartaID);
+
+        int rows = ps.executeUpdate();
+        ps.close();
+        return rows;
+    }
+    
+
     
 }

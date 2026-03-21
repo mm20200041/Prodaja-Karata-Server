@@ -7,8 +7,6 @@ package util;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.*;
-import util.QrGenerator;
-import domen.Racun;
 import domen.StavkaRacuna;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
